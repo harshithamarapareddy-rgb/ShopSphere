@@ -1,0 +1,58 @@
+import { FaUser, FaStore, FaShoppingBag, FaShieldAlt } from 'react-icons/fa';
+
+export const ROLE_CONFIG = {
+  user: {
+    key: 'user',
+    label: 'Customer',
+    title: 'Customer Login',
+    subtitle: 'Sign in to browse city listings, save interests and manage your profile.',
+    accent: '#2563eb',
+    accentLight: '#eff6ff',
+    icon: FaUser,
+    loginPath: '/login/user',
+    signupPath: '/register/user',
+    dashboard: '/dashboard',
+    perks: ['Browse products by city', 'Mark products as interested', 'Connect with verified sellers'],
+  },
+  seller: {
+    key: 'seller',
+    label: 'Seller',
+    title: 'Seller Login',
+    subtitle: 'Sign in to manage your listings and connect with interested buyers.',
+    accent: '#059669',
+    accentLight: '#ecfdf5',
+    icon: FaStore,
+    loginPath: '/login/seller',
+    signupPath: '/register/seller',
+    dashboard: '/seller',
+    perks: ['Post and edit product listings', 'See interested buyers', 'Contact buyers directly'],
+  },
+  shop: {
+    key: 'shop',
+    label: 'Shop',
+    title: 'Shop Login',
+    subtitle: 'Sign in to your registered shop to manage inventory and buyer interest.',
+    accent: '#7c3aed',
+    accentLight: '#f5f3ff',
+    icon: FaShoppingBag,
+    loginPath: '/login/shop',
+    signupPath: '/register/shop',
+    dashboard: '/seller',
+    perks: ['Register your physical or online shop', 'Publish shop listings', 'Respond to interested buyers'],
+  },
+  admin: {
+    key: 'admin',
+    label: 'Admin',
+    title: 'Administrator Login',
+    subtitle: 'Restricted access to platform governance and moderation.',
+    accent: '#dc2626',
+    accentLight: '#fef2f2',
+    icon: FaShieldAlt,
+    loginPath: '/login/admin',
+    signupPath: null,
+    dashboard: '/admin',
+    perks: ['View users, sellers & shops', 'Add categories and cities', 'Moderate the platform'],
+  },
+};
+
+export const LOGIN_PORTALS = ['user', 'seller', 'shop', 'admin'];

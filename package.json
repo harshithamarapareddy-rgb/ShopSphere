@@ -1,0 +1,28 @@
+{
+  "name": "shopsphere-workspace",
+  "version": "1.0.0",
+  "description": "SHOP SPHERE - Online Classified Advertisement and Shopping Platform (Full MERN Stack)",
+  "scripts": {
+    "start:db": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-mongodb.ps1",
+    "start:all": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-shopsphere.ps1",
+    "restart:all": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-shopsphere.ps1 -Restart",
+    "start:backend": "cd backend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "mongodb",
+    "express",
+    "react",
+    "node",
+    "classifieds",
+    "ecommerce",
+    "shopsphere"
+  ],
+  "author": "SHOP SPHERE Team",
+  "license": "MIT"
+}
+
